@@ -24,7 +24,7 @@ void registraNotasAlunos(List<String> alunos, List<List<double>> notas){
       print("Digite uma nota para o aluno $nomeAluno (ou 'fim' para encerrar):");
       String? entrada = stdin.readLineSync();
 
-      if(entrada == 'fim'){
+      if(entrada == 'fim' || entrada == 'Fim' || entrada == 'FIM'){
         break;
       }else if(entrada != null){
         double nota = double.parse(entrada);
